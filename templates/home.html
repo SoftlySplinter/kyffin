@@ -1,0 +1,84 @@
+{% extends "template.html" %}
+{% block content %}
+
+<h1>Introduction</h1>
+<p>
+This site is a web-based version of the third year project entitled "Kyffin Williams: Digital Analysis 
+of Paintings" by <a href="http://alexanderdbrown.com/">Alexander Brown</a> and the associated 
+paper submitted to <abbr title="International Symposium on Image and Signal Processing and Analysis">ISPA</abbr> 2013 entitled "Can we date an artist's work from catalogue photographs",
+A. Brown, G. Roderick, H. Dee and L. Hughes[<a href="#cite-1">1</a>].
+</p>
+<p>
+This site uses:
+</p>
+<ul>
+  <li><a href="http://flask.pocoo.org">Flask</a>, a microframework for Python based on Werkzeug, Jinja 2 and good intentions.</li>
+  <li><a href="http://opencv.org">OpenCV</a>, an open source computer vision and machine learning software library.</li>
+</ul>
+<p></p>
+
+<h1>Background</h1>
+<p>
+  Sir John Kyffin Williams (1918-2006) was one of the predominant figures in Welsh art of the 
+twentieth century. Kyffin - as he was almost universally known throughout Wales - studied at the 
+Slade School of Art and worked as an art master in Highgate School before returning to live on his
+native Angelsey in 1973. He was a prolific painter and once claimed to have painted "two pictures 
+per week when in London, and three per week when in Wales."[<a href="#cite-2">2</a>, p.209] With a
+career spanning from the mid-1940s to approximately 2004, this rate amounts to a large body of 
+work.
+</p>
+<p>
+His technique evolved from a very representational style to something more expressive, which 
+retained representational qualities: his landscapes are almost constructed with swathes of 
+textural paint. His was a style characterised by thick impasto paint, applied almost exclusively 
+with palette knife, although the application technique appears to change over time. This 
+development of style led to the question: <strong>"is it possible to date the pictures from images 
+alone?"</strong>
+</p>
+<p>
+Although also a portrait painter, Williams is primarily known for his landscape paintings of north
+west Wales and Anglesey. While his technique and style changed over the years, his landscapes in 
+oil are instantly recognisable, often featuring bold chunks of colour, and various points during 
+his career bold black outlines to figures and landscapes features. Greens, browns and greys often 
+form the palette of his paintings of the Welsh landscape. These colour selections seem appropriate
+for the artists claim that melancholy, derived from the "dark hills, heavy clouds and enveloping 
+sea mists", is a national characteristic of the Welsh [<a href="#cite-2">2</a>]. This combination 
+of colour selection and technique seems appropriate for the depiction of the areas where he 
+painted. Many of his most successful paintings are said to have a "dark quality" in depicting 
+"rain lashed hillsides," and it was this darkness which "makes his landscapes so distinctively 
+Welsh" [<a href="#cite-3">3</a>].
+</p>
+<p>
+The aesthetic of Williams's Welsh landscapes is contrasted by the paintings he made following a 
+trip to Patagonia to paint the landscape and people of the Welsh communities there in 1968 as part
+of a Winston Churchill Foundation scholarship. The colours and application of paint in pictures 
+produced in following this journey (such as <em>Lle Cul</em>, <em>Henry Roberts</em>, <em>Bryngwyn
+Patagonia</em>, <em>Euros Hughes Irrigating his Fields</em>, all 1969, National Library of Wales) 
+differ starkly from paintings of Welsh landscapes, incorporating pinks, purples and oranges. This 
+contrast, combined with the fact that the Patagonian pictures were produced during a definite 
+period of time has reinforced our interest in the analysis of the formal qualities of pictures 
+from different collections remotely, using digital images.
+</p>
+<p>
+Williams's work is well represented in public collections in Wales (particularly at the National
+Library of Wales, the National Museums and Galleries of Wales and Oriel Ynys M&ocirc;n, 
+Anglesey). His pictures, often depicting the landscape and people of north-west Wales were also 
+tremendously popular with the art buying public. Of the 325 paintings by Williams in public 
+collections in the UK listed on the BBC/Public Catalogue Foundation's "Your Paintings" 
+website, 212 of them are in the collections of the National Library of 
+Wales[<a href="cite-4">4</a>]. Many of these paintings were bequeathed to the Library as part of a
+larger bequest by the artist (including works on paper and other archival material). Many of the 
+pictures which came to the library from the artists studio had little in the way of metadata, and 
+as such have been catalogued with large date-ranges estimating the dates of production. This 
+uncertainty in metadata is another motivating force behind the current project.
+</p>
+
+<h1 id="references">References</h1>
+<ol id="cite">
+<li id="cite-1">A. Brown, G. Roderick, H. Dee and L. Hughes, "Can we date an artist's work from catalogue photographs?", 2013.</li>
+<li id="cite-2">K. Williams, <em>Across the Straits: An Autobiography.</em> Llandysul, Wales: Gomer, 1993.</li>
+<li id="cite-3">J. Davies, <em>100 Welsh heroes.</em> Aberystwyth, Wales: Culturenet Cymru, 2004.</li>
+<li id="cite-4">“Your Paintings - Kyffin Williams,” Mar. 2013. [<a href="http://www.bbc.co.uk/arts/yourpaintings/artists/kyffin-williams">Online</a>]</li>
+</li>
+</ol>
+{% endblock %}

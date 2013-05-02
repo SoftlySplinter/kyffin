@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'Open Baskerville';
+  src: url('/static/fonts/baskerville.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+h1 {
+  padding-top: 5px;
+  font-family: 'Open Baskerville', times;
+  font-size: 25px;
+  padding-bottom: 0px;
+  font-weight: normal;
+}
+
+#content {
+  counter-reset: section;
+  padding: 40px;
+}
+
+#content h1:before {
+  counter-increment: section;
+  content: counter(section) ". ";
+}
+
+#content h1#references:before {
+  content: "";
+}
+
+h2 {
+  padding: 10px;
+  font-family: 'Open Baskerville', times;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#title {
+  background-color: #555;
+}
+
+#title h1 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
+#title h2 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  font-weight: normal;
+  padding-top: 0px;
+}
+
+hr {
+  border: none;
+  height: 27px;
+  background-image: url('/static/img/border.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#title hr {
+  background-image: url('/static/img/border-inv.png');
+}
+
+p {
+  padding-bottom: 1em;
+  font-size: 13.5pt;
+}
+
+h1 + p:first-letter {
+  font-size: 18pt;
+  font-family: 'Open Baskerville', times;
+}
+
+ol#cite li:before {
+  counter-increment: cite;
+  content: "["counter(cite)"] ";
+}
+
+ol#cite {
+  counter-reset: cite;
+  padding-left: 30px;
+  list-style: none;
+  
+}
+
+#content p {
+  text-align: justify;
+}
+
+
+ul {
+  list-style: none;
+}
+
+ul li:before {
+  content: "» ";
+}
